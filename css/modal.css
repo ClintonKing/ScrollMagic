@@ -66,7 +66,7 @@ header h1 {
 }
 @media only screen and (min-width: 768px) {
   .cd-section {
-    padding: 4em 10%;
+    padding: 4em;
   }
   .cd-section p {
     font-size: 1.8rem;
@@ -75,7 +75,7 @@ header h1 {
 }
 @media only screen and (min-width: 1170px) {
   .cd-section {
-    padding: 4em 20%;
+    padding: 4em;
   }
 }
 
@@ -145,6 +145,11 @@ header h1 {
     line-height: 2;
     white-space: normal;
   }
+}
+
+.cd-modal iframe{
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .cd-modal-action {

@@ -188,6 +188,9 @@ h1.badge.velocity:after {
 .spacer.s0 {
 	min-height: 1px;
 }
+.spacer.s05{
+	min-height: 50px;
+}
 .spacer.s1 {
 	min-height: 100px;
 }
@@ -231,6 +234,9 @@ h1.badge.velocity:after {
 }
 .horizontal .spacer.s0 {
 	min-width: 1px;
+}
+.horizontal .spacer.s05{
+	min-width: 50px;
 }
 .horizontal .spacer.s1 {
 	min-width: 100px;
