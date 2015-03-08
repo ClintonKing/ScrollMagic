@@ -8,24 +8,24 @@
   <title>Parallax Test</title>
 
   <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic|Josefin+Slab:400,700italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="../css/reset.css" type="text/css">
+  <link rel="stylesheet" href="../css/modal.css" type="text/css">
   <link rel="stylesheet" href="../css/normalize.css" type="text/css">
   <link rel="stylesheet" href="../css/style.css" type="text/css">
   <link rel="stylesheet" href="../css/examples.css" type="text/css">
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
-  <link rel="stylesheet" href="css/modal.css"> <!-- Resource style -->
 
   <script type="text/javascript" src="../js/lib/jquery.min.js"></script>
   <script type="text/javascript" src="../js/lib/highlight.pack.js"></script>
   <script type="text/javascript" src="../js/lib/modernizr.custom.min.js"></script>
   <script type="text/javascript" src="../js/examples.js"></script>
+  <script type="text/javascript" src="../js/lib/velocity.min.js"></script>
 
   <script type="text/javascript" src="../js/lib/greensock/TweenMax.min.js"></script>
   <script type="text/javascript" src="../scrollmagic/uncompressed/ScrollMagic.js"></script>
   <script type="text/javascript" src="../scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
   <script type="text/javascript" src="../scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
-  <script src="js/velocity.min.js"></script>
-  <script src="js/modal.js"></script> <!-- Resource jQuery -->
+
 </head>
 
 
@@ -47,14 +47,8 @@
           </div>
         </section>
         <section class="demo">
-          <div class="spacer s2"></div>
-          <div id="trigger" class="spacer s0"></div>
-          <div id="trigger2" class="spacer s0"></div>
-          <a href="#"><div id="target" class="box2 black">
-            <h4>Here's a story.</h4>
-          </div></a>
-          <div class="spacer s2"></div>
-          
+
+
         </div> <!-- LAYER 1 END -->
 
 
@@ -71,6 +65,32 @@
             <h4>I'm on</h4>
             <h4>layer 3.</h4>
           </div>
+          <div class="spacer s2"></div>
+          <div id="trigger" class="spacer s0"></div>
+          <div id="trigger2" class="spacer s0"></div>
+
+        <section class="cd-section">
+          <a href="#0" id="target" data-type="modal-trigger" class="box2 black btn">
+            <h4>Here's a story.</h4>
+          </a>
+
+          <span class="cd-modal-bg"></span>
+
+
+          <div class="cd-modal">
+            <div class="cd-modal-content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad modi repellendus, optio eveniet eligendi molestiae? Fugiat, temporibus! A rerum pariatur neque laborum earum, illum voluptatibus eum voluptatem fugiat, porro animi tempora? Sit harum nulla, nesciunt molestias, iusto aliquam aperiam est qui possimus reprehenderit ipsam ea aut assumenda inventore iste! Animi quaerat facere repudiandae earum quisquam accusamus tempora, delectus nesciunt, provident quae aliquam, voluptatum beatae quis similique in maiores repellat eligendi voluptas veniam optio illum vero! Eius, dignissimos esse eligendi veniam.</p>
+
+            </div> <!-- cd-modal-content -->
+          </div> <!-- cd-modal -->
+
+          <a href="#0" class="cd-modal-close">Close</a>
+        </div>
+
+          <div class="spacer s2"></div>
+
+
+
         </div> <!-- END LAYER 3 -->
 
 
@@ -85,7 +105,8 @@
             // build scene
             var scene = new ScrollMagic.Scene({triggerElement: "#trigger", duration: 250})
                     .setTween(tween)
-                    .addIndicators() // add indicators (requires plugin)
+
+                  //  .addIndicators() // add indicators (requires plugin)
                     .addTo(controller);
           </script>
           <script>
@@ -94,9 +115,9 @@
             var tween = TweenMax.to("#target", 0.5, {backgroundColor: "#231d1f" , width: "-=100"});
 
             // build scene
-            var scene = new ScrollMagic.Scene({triggerElement: "#trigger2", duration: 250, offset: 300})
+            var scene = new ScrollMagic.Scene({triggerElement: "#trigger2", duration: 250, offset: 400})
                     .setTween(tween)
-                    .addIndicators() // add indicators (requires plugin)
+                    //.addIndicators() // add indicators (requires plugin)
                     .addTo(controller);
           </script>
           <script>
@@ -104,7 +125,7 @@
 
             var scene = new ScrollMagic.Scene({triggerElement: "stick_trigger", duration: 4000})
                     .setPin("#sticker")
-                    .addIndicators()
+                    //.addIndicators()
                     .addTo(controller);
           </script>
         </section>
@@ -113,7 +134,8 @@
     </div>
   </div>
   </div>
-  <script type="text/javascript" src="../../js/tracking.js"></script>
+  <script type="text/javascript" src="../js/tracking.js"></script>
+  <script type="text/javascript" src="../js/modal.js"></script>
 </body>
 
 

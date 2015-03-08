@@ -1,4 +1,4 @@
-/* -------------------------------- 
+/* --------------------------------
 
 Primary style
 
@@ -29,9 +29,9 @@ a {
   text-decoration: none;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
-Main Components 
+Main Components
 
 -------------------------------- */
 header {
@@ -55,9 +55,7 @@ header h1 {
 }
 
 .cd-section {
-  padding: 2em 5%;
   text-align: center;
-  background-color: #03bb91;
 }
 .cd-section p {
   margin: 2em 0;
@@ -145,38 +143,41 @@ header h1 {
   .cd-modal p {
     font-size: 2rem;
     line-height: 2;
+    white-space: normal;
   }
 }
 
 .cd-modal-action {
   position: relative;
 }
-.cd-modal-action .btn, .cd-modal-action .cd-modal-bg {
+
+.btn,.cd-modal-bg {
   display: inline-block;
   height: 4em;
   background-color: #34383c;
+  min-width: 64px;
+  min-height: 64px;
+
 }
-.cd-modal-action .btn {
+
+.btn {
   width: 12.5em;
   border-radius: 5em;
   color: #ffffff;
-  line-height: 4em;
-  white-space: nowrap;
-  font-weight: 700;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-transition: color 0.2s 0.3s, width 0.3s 0s;
   -moz-transition: color 0.2s 0.3s, width 0.3s 0s;
   transition: color 0.2s 0.3s, width 0.3s 0s;
 }
-.cd-modal-action .btn.to-circle {
+.btn.to-circle {
   width: 4em;
   color: transparent;
   -webkit-transition: color 0.2s 0s, width 0.3s 0.2s;
   -moz-transition: color 0.2s 0s, width 0.3s 0.2s;
   transition: color 0.2s 0s, width 0.3s 0.2s;
 }
-.cd-modal-action .cd-modal-bg {
+.cd-modal-bg {
   position: absolute;
   z-index: 1;
   left: 50%;
@@ -199,9 +200,10 @@ header h1 {
   -moz-transition: visibility 0s 0.5s;
   transition: visibility 0s 0.5s;
 }
-.cd-modal-action .cd-modal-bg.is-visible {
+.cd-modal-bg.is-visible {
   opacity: 1;
   visibility: visible;
+  z-index: 1;
 }
 
 .cd-modal-close {

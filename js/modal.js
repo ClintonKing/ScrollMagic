@@ -3,7 +3,7 @@ jQuery(document).ready(function($){
 	$('[data-type="modal-trigger"]').on('click', function(){
 		var actionBtn = $(this),
 			scaleValue = retrieveScale(actionBtn.next('.cd-modal-bg'));
-		
+
 		actionBtn.addClass('to-circle');
 		actionBtn.next('.cd-modal-bg').addClass('is-visible').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
 			animateLayer(actionBtn.next('.cd-modal-bg'), scaleValue, true);
@@ -11,6 +11,8 @@ jQuery(document).ready(function($){
 
 		//if browser doesn't support transitions...
 		if(actionBtn.parents('.no-csstransitions').length > 0 ) animateLayer(actionBtn.next('.cd-modal-bg'), scaleValue, true);
+
+		console.log('CHECK 1');
 	});
 
 	//trigger the animation - close modal window
@@ -50,7 +52,7 @@ jQuery(document).ready(function($){
 	function animateLayer(layer, scaleVal, bool) {
 		layer.velocity({ scale: scaleVal }, 400, function(){
 			$('body').toggleClass('overflow-hidden', bool);
-			(bool) 
+			(bool)
 				? layer.parents('.cd-section').addClass('modal-is-visible').end().off('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend')
 				: layer.removeClass('is-visible').removeAttr( 'style' ).siblings('[data-type="modal-trigger"]').removeClass('to-circle');
 		});
@@ -62,12 +64,14 @@ jQuery(document).ready(function($){
 			layerTop = layer.siblings('.btn').offset().top + layerRadius - $(window).scrollTop(),
 			layerLeft = layer.siblings('.btn').offset().left + layerRadius,
 			scale = scaleValue(layerTop, layerLeft, layerRadius, $(window).height(), $(window).width());
-		
+
 		layer.velocity({
 			top: layerTop - layerRadius,
 			left: layerLeft - layerRadius,
 			scale: scale,
 		}, 0);
+
+		console.log('CHECK 2');
 	}
 
 	function closeModal() {

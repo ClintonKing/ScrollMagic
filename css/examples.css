@@ -1139,3 +1139,7 @@ h3{
 	margin-top: .6em;
 	font-size: 1.7em;
 }
+
+a:hover{
+	text-decoration: none;
+}
