@@ -4,7 +4,7 @@ jQuery(document).ready(function($){
 		var actionBtn = $(this),
 			scaleValue = retrieveScale(actionBtn.next('.cd-modal-bg'));
 
-		actionBtn.addClass('to-circle');
+		//actionBtn.addClass('to-circle');
 		actionBtn.next('.cd-modal-bg').addClass('is-visible').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
 			animateLayer(actionBtn.next('.cd-modal-bg'), scaleValue, true);
 		});
@@ -82,4 +82,7 @@ jQuery(document).ready(function($){
 		//if browser doesn't support transitions...
 		if(section.parents('.no-csstransitions').length > 0 ) animateLayer(section.find('.cd-modal-bg'), 1, false);
 	}
+
+	
+
 });

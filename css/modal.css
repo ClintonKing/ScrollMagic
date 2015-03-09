@@ -115,7 +115,7 @@ header h1 {
   -moz-osx-font-smoothing: grayscale;
 }
 .cd-modal p {
-  color: #ffffff;
+  color: #231d1f;
   line-height: 1.6;
   margin: 2em 0;
 }
@@ -156,10 +156,10 @@ header h1 {
   position: relative;
 }
 
-.btn,.cd-modal-bg {
+.cd-modal-bg {
   display: inline-block;
   height: 4em;
-  background-color: #34383c;
+  background-color: #fff;
   min-width: 64px;
   min-height: 64px;
 
@@ -167,7 +167,6 @@ header h1 {
 
 .btn {
   width: 12.5em;
-  border-radius: 5em;
   color: #ffffff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
