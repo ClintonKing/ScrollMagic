@@ -858,6 +858,7 @@ a.viewsource:before {
 #parallaxContainer {
 	height: 100%;
 	width: 5760px;
+	overflow: hidden;
 }
 #parallaxContainer .layer1 {
 	height: 100%;
@@ -866,7 +867,7 @@ a.viewsource:before {
 	background: url("../img/ParallaxTesting/backgroundLayer_3screen.png");
 	background-position: left bottom;
 	background-size: 100% 100%;
-/*	background-repeat: repeat-x; */
+  background-repeat: repeat-x;
 }
 #parallaxContainer .layer2 {
 	position: absolute;
@@ -876,7 +877,7 @@ a.viewsource:before {
 	background: url("../img/ParallaxTesting/middleLayer_3screen.png");
 	background-position: left bottom;
 	background-size: 100% 100%;
-	/*	background-repeat: repeat-x; */
+	background-repeat: repeat-x;
 }
 #parallaxContainer .layer3 {
 	position: absolute;
@@ -886,6 +887,7 @@ a.viewsource:before {
 	background: url("../img/ParallaxTesting/topLayer_3screen.png");
 	background-position: left bottom;
 	background-size: 100% 100%;
+	background-repeat: repeat-x;
 }
 #parallaxText {
 	width: 0;
