@@ -65,7 +65,7 @@ section#titlechart {
 	height: 100%;
 }
 section#titlechart #description {
-	top: 40%;
+	top: 30%;
 	left: 50%;
 	position: absolute;
 	width: 600px;
@@ -102,14 +102,16 @@ section#titlechart #description ol, section#titlechart #description p {
 section#titlechart #description ol {
 	list-style-position: outside;
 }
-#example-wrapper section#titlechart #description:after {
+
+/* #example-wrapper section#titlechart #description:after {
 	content: "↧";
 	font-size: 40px;
 	display: block;
 }
-#example-wrapper.horizontal section#titlechart #description:after {
+
+ #example-wrapper.horizontal section#titlechart #description:after {
 	content: "↦";
-}
+} */
 
 
 section.demo * {
@@ -234,6 +236,9 @@ h1.badge.velocity:after {
 }
 .horizontal .spacer.s0 {
 	min-width: 1px;
+}
+.horizontal .spacer.s03{
+	min-width: 30px;
 }
 .horizontal .spacer.s05{
 	min-width: 50px;
@@ -864,7 +869,7 @@ a.viewsource:before {
 	height: 100%;
 	text-align: center;
 	width: 5760px;
-	background: url("../img/ParallaxTesting/backgroundLayer_3screen.png");
+	background: url("../img/ParallaxTesting/panorama_demo_bigPano.png");
 	background-position: left bottom;
 	background-size: 100% 100%;
   background-repeat: repeat-x;
@@ -874,7 +879,6 @@ a.viewsource:before {
 	height: 100%;
 	width: 5760px;
 	bottom: 0px;
-	background: url("../img/ParallaxTesting/middleLayer_3screen.png");
 	background-position: left bottom;
 	background-size: 100% 100%;
 	background-repeat: repeat-x;
@@ -884,7 +888,6 @@ a.viewsource:before {
 	height: 100%;
 	width: 5760px;
 	bottom: 0px;
-	background: url("../img/ParallaxTesting/topLayer_3screen.png");
 	background-position: left bottom;
 	background-size: 100% 100%;
 	background-repeat: repeat-x;
@@ -1174,36 +1177,91 @@ a:hover{
 
 /*CSS FOR INDIVIDUAL PIECES */
 
-#target{
-	left: 100px;
-	top: 20%;
+#story1{
+	left: -190px;
+	top: 50%;
 }
 
 #story2{
-	left: 215px;
-	top: 20%;
+	left: -80px;
+	top: 50%;
 }
 
-#child1{
-	background-image: url("../img/ParallaxTesting/foregroundImg.png");
+#story3{
+	left: 400px;
+	top: 50%;
+}
+
+#story4{
+	left: 350px;
+	top: 50%;
+}
+
+#subject1{
+	background-image: url("../img/ParallaxTesting/pic2.png");
 	background-repeat: no-repeat;
-	background-size: 100%;
+	background-size: 50%;
 	position: absolute;
 	display: inline-block;
-	bottom: 0;
+	bottom: 0px;
 	width: 250px;
-	height: 250px;
-	left: 1200px;
+	height: 315px;
+	left: 1100px;
 }
 
-#mother1{
-	background-image: url("../img/ParallaxTesting/mother2.png");
+#subject2{
+	background-image: url("../img/ParallaxTesting/pic3.png");
 	background-repeat: no-repeat;
 	background-size: 100%;
 	position: absolute;
 	display: inline-block;
-	bottom: 20%;
-	width: 200px;
-	height: 200px;
-	left: 2000px;
+	bottom: 0%;
+	width: 300px;
+	height: 290px;
+	left: 1900px;
+}
+
+#subject3{
+	background-image: url("../img/ParallaxTesting/pic1.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	position: absolute;
+	display: inline-block;
+	bottom: 0%;
+	width: 300px;
+	height: 290px;
+	left: 2500px;
+}
+
+#subject4{
+	background-image: url("../img/ParallaxTesting/morgan.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	position: absolute;
+	display: inline-block;
+	bottom: 5%;
+	width: 100px;
+	height: 300px;
+	left: 3100px;
+}
+
+#tree1{
+	height: 80%;
+	width: auto;
+	position: relative;
+	top: 100px;
+	left: -200px;
+}
+
+#tree2{
+	height: 70%;
+	width: auto;
+	position: relative;
+	left: 800px;
+}
+
+#intro{
+	position: absolute;
+	top: 30%;
+	left: 140px;
 }

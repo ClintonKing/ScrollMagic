@@ -20,6 +20,7 @@
   <script type="text/javascript" src="../js/lib/modernizr.custom.min.js"></script>
   <script type="text/javascript" src="../js/examples.js"></script>
   <script type="text/javascript" src="../js/lib/velocity.min.js"></script>
+  <script type="text/javascript" src="../js/jquery.mousewheel.min.js"></script>
 
   <script type="text/javascript" src="../js/lib/greensock/TweenMax.min.js"></script>
   <script type="text/javascript" src="../scrollmagic/uncompressed/ScrollMagic.js"></script>
@@ -40,7 +41,7 @@
         <div class="layer1">
         <section id="titlechart">
           <div id="description">
-            <h1 class="badge alpha">The Mayi</h1>
+            <h1 class="badge beta">The Mayi</h1>
             <h2>Scroll to move to the right and explore our stories.</h2>
             <p>
               Learn about CARE's work in Malawi, and how they're empowering communities to work together to improve maternal healthcare.
@@ -55,23 +56,23 @@
 
 
         <div class="layer2">
-          <div class="spacer s05"></div>
-          <div id="stick_trigger" class="spacer s0"></div>
-          <div id="sticker" class="box2 blue">
-            <h5>Stuck on Layer 2</h5>
-          </div>
+          <div class="spacer s03"></div>
+          <img src="../img/ParallaxTesting/panorama_demo_tallTree.png" id="tree1"/>
+          <img src="../img/ParallaxTesting/panorama_demo_wideTree.png" id="tree2"/>
         </div> <!-- END LAYER 2 -->
+
         <div class="layer3">
+          <iframe src="https://player.vimeo.com/video/122941824?color=ff3c00&portrait=0&badge=0" width="700" height="393" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen id="intro"></iframe>
           <div class="spacer s8"></div>
           <div id="titleFade" class="spacer s0"></div>
-          <a id="child1" href="#" onclick="pipe1();"></a>
+          <a id="subject1" href="#" onclick="pipe1();"></a>
           <div class="spacer s2"></div>
           <div id="trigger" class="spacer s0"></div>
           <div id="trigger2" class="spacer s0"></div>
 
         <section class="cd-section">
-          <a href="#" id="target" data-type="modal-trigger" class="box2 black btn">
-            <h4>Here's a story.</h4>
+          <a href="#" id="story1" data-type="modal-trigger" class="box2 black btn">
+            <h4>Story 1</h4>
           </a>
 
           <span class="cd-modal-bg"></span>
@@ -90,14 +91,14 @@
 
           <div class="spacer s2"></div>
 
-          <a id="mother1" href="#" onclick="pipe2();"></a>
+          <a id="subject2" href="#" onclick="pipe2();"></a>
           <div class="spacer s2"></div>
           <div id="trigger3" class="spacer s0"></div>
           <div id="trigger4" class="spacer s0"></div>
 
         <section class="cd-section">
           <a href="#" id="story2" data-type="modal-trigger" class="box2 black btn">
-            <h4>Here's a story.</h4>
+            <h4>Story 2</h4>
           </a>
 
           <span class="cd-modal-bg"></span>
@@ -113,6 +114,52 @@
           <a href="#" class="cd-modal-close">Close</a>
         </section>
 
+          <a id="subject3" href="#" onclick="pipe3();"></a>
+          <div class="spacer s2"></div>
+          <div id="trigger5" class="spacer s0"></div>
+          <div id="trigger6" class="spacer s0"></div>
+
+          <section class="cd-section">
+            <a href="#" id="story3" data-type="modal-trigger" class="box2 black btn">
+              <h4>Story 3</h4>
+            </a>
+
+            <span class="cd-modal-bg"></span>
+
+
+            <div class="cd-modal">
+              <div class="cd-modal-content">
+                <p>Third article would go here. </p>
+
+              </div> <!-- cd-modal-content -->
+            </div> <!-- cd-modal -->
+
+            <a href="#" class="cd-modal-close">Close</a>
+          </section>
+
+          <a id="subject4" href="#" onclick="pipe4();"></a>
+          <div class="spacer s2"></div>
+          <div id="trigger7" class="spacer s0"></div>
+          <div id="trigger8" class="spacer s0"></div>
+
+          <section class="cd-section">
+            <a href="#" id="story4" data-type="modal-trigger" class="box2 black btn">
+              <h4>Story 4</h4>
+            </a>
+
+            <span class="cd-modal-bg"></span>
+
+
+            <div class="cd-modal">
+              <div class="cd-modal-content">
+                <p>Fourth article would go here. </p>
+
+              </div> <!-- cd-modal-content -->
+            </div> <!-- cd-modal -->
+
+            <a href="#" class="cd-modal-close">Close</a>
+          </section>
+
 
 
         </div> <!-- END LAYER 3 -->
@@ -124,7 +171,7 @@
             var controller = new ScrollMagic.Controller({vertical: false});
 
             // build tween
-            var tween = TweenMax.to("#target", 0.5, {backgroundColor: "#e4782e" , width: "+=100"});
+            var tween = TweenMax.to("#story1", 0.5, {backgroundColor: "#e4782e" , width: "+=50"});
 
             // build scene
             var scene = new ScrollMagic.Scene({triggerElement: "#trigger", duration: 250})
@@ -132,30 +179,20 @@
 
                   //  .addIndicators() // add indicators (requires plugin)
                     .addTo(controller);
-          </script>
-          <script>
+
 
             // build tween
-            var tween = TweenMax.to("#target", 0.5, {backgroundColor: "#231d1f" , width: "-=100"});
+            var tween = TweenMax.to("#story1", 0.5, {backgroundColor: "#231d1f" , width: "-=50"});
 
             // build scene
             var scene = new ScrollMagic.Scene({triggerElement: "#trigger2", duration: 250, offset: 400})
                     .setTween(tween)
                     //.addIndicators() // add indicators (requires plugin)
                     .addTo(controller);
-          </script>
-          <script>
-
-
-            var scene = new ScrollMagic.Scene({triggerElement: "stick_trigger", duration: 5000})
-                    .setPin("#sticker")
-                    //.addIndicators()
-                    .addTo(controller);
-          </script>
-          <script> // BEGIN SECOND STORY TARGET
+           // BEGIN SECOND STORY TARGET
 
             // build tween
-            var tween = TweenMax.to("#story2", 0.5, {backgroundColor: "#e4782e" , width: "+=100"});
+            var tween = TweenMax.to("#story2", 0.5, {backgroundColor: "#e4782e" , width: "+=50"});
 
             // build scene
             var scene = new ScrollMagic.Scene({triggerElement: "#trigger3", duration: 250})
@@ -163,35 +200,59 @@
 
                   //  .addIndicators() // add indicators (requires plugin)
                     .addTo(controller);
-          </script>
-          <script>
+
 
             // build tween
-            var tween = TweenMax.to("#story2", 0.5, {backgroundColor: "#231d1f" , width: "-=100"});
+            var tween = TweenMax.to("#story2", 0.5, {backgroundColor: "#231d1f" , width: "-=50"});
 
             // build scene
             var scene = new ScrollMagic.Scene({triggerElement: "#trigger4", duration: 250, offset: 400})
                     .setTween(tween)
                     //.addIndicators() // add indicators (requires plugin)
                     .addTo(controller);
-          </script>
-          <script>
+           // BEGIN THIRD STORY TARGET
+
             // build tween
-            var tween = new TimelineMax ()
-              .add([
-                TweenMax.to("#parallaxContainer .layer1", 1, {backgroundPosition: "-40% 0", ease: Linear.easeNone}),
-                TweenMax.to("#parallaxContainer .layer2", 1, {backgroundPosition: "-500% 0", ease: Linear.easeNone}),
-                TweenMax.to("#parallaxContainer .layer3", 1, {backgroundPosition: "-225% 0", ease: Linear.easeNone})
-              ]);
+            var tween = TweenMax.to("#story3", 0.5, {backgroundColor: "#e4782e" , width: "+=50"});
 
             // build scene
-            var scene = new ScrollMagic.Scene({triggerElement: "#parallaxContainer", duration: 5760})
+            var scene = new ScrollMagic.Scene({triggerElement: "#trigger5", duration: 250})
                     .setTween(tween)
-                    //.setPin("#parallaxContainer")
+
+                  //  .addIndicators() // add indicators (requires plugin)
+                    .addTo(controller);
+
+
+            // build tween
+            var tween = TweenMax.to("#story3", 0.5, {backgroundColor: "#231d1f" , width: "-=50"});
+
+            // build scene
+            var scene = new ScrollMagic.Scene({triggerElement: "#trigger6", duration: 250, offset: 400})
+                    .setTween(tween)
                     //.addIndicators() // add indicators (requires plugin)
                     .addTo(controller);
-          </script>
-          <script>
+           // BEGIN FOURTH STORY TARGET
+
+            // build tween
+            var tween = TweenMax.to("#story4", 0.5, {backgroundColor: "#e4782e" , width: "+=50"});
+
+            // build scene
+            var scene = new ScrollMagic.Scene({triggerElement: "#trigger7", duration: 250})
+                    .setTween(tween)
+
+                  //  .addIndicators() // add indicators (requires plugin)
+                    .addTo(controller);
+
+
+            // build tween
+            var tween = TweenMax.to("#story4", 0.5, {backgroundColor: "#231d1f" , width: "-=50"});
+
+            // build scene
+            var scene = new ScrollMagic.Scene({triggerElement: "#trigger8", duration: 250, offset: 400})
+                    .setTween(tween)
+                    //.addIndicators() // add indicators (requires plugin)
+                    .addTo(controller);
+
             var scene = new ScrollMagic.Scene({triggerElement: "#titleFade"})
                     // trigger a velocity opaticy animation
                     .setVelocity("#titlechart", {opacity: 0}, {duration: 500})
@@ -199,14 +260,32 @@
                     .addTo(controller);
           </script>
           <script>
-          function pipe1(){
-            $('#target').click();
-            console.log('Piped');
-          }
+            function pipe1(){
+              $('#story1').click();
+              console.log('Piped');
+            }
+            function pipe2(){
+              $('#story2').click();
+            }
+            function pipe3(){
+              $('#story3').click();
+            }
+            function pipe4(){
+              $('#story4').click();
+            }
+          </script>
+          <script>
+            $(function() {
 
-          function pipe2(){
-            $('#story2').click();
-          }
+             $("body").mousewheel(function(event, delta) {
+
+                this.scrollLeft -= (delta * 30);
+
+                event.preventDefault();
+
+             });
+
+            });
           </script>
         </section>
         <!-- <div class="spacer s_viewport"></div> -->
