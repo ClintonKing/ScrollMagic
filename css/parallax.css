@@ -1179,22 +1179,47 @@ a:hover{
 
 #story1{
 	left: -190px;
-	top: 50%;
+	top: 30%;
 }
-
 #story2{
-	left: -80px;
-	top: 50%;
+	left: -480px;
+	top: 30%;
 }
-
 #story3{
-	left: 400px;
-	top: 50%;
+	left: -300px;
+	top: 30%;
 }
-
 #story4{
-	left: 350px;
-	top: 50%;
+	left: -450px;
+	top: 30%;
+}
+#story5{
+	left: -200px;
+	top: 30%;
+}
+#story6{
+	left: -100px;
+	top: 30%;
+}
+#story7{
+	left: -100px;
+	top: 30%;
+}
+#story8{
+	left: -100px;
+	top: 30%;
+}
+#story9{
+	left: 00px;
+	top: 30%;
+}
+#story10{
+	left: 200px;
+	top: 30%;
+}
+#story11{
+	left: 200px;
+	top: 30%;
 }
 
 #subject1{
@@ -1208,7 +1233,6 @@ a:hover{
 	height: 315px;
 	left: 1100px;
 }
-
 #subject2{
 	background-image: url("../img/ParallaxTesting/pic3.png");
 	background-repeat: no-repeat;
@@ -1218,9 +1242,8 @@ a:hover{
 	bottom: 0%;
 	width: 300px;
 	height: 290px;
-	left: 1900px;
+	left: 1500px;
 }
-
 #subject3{
 	background-image: url("../img/ParallaxTesting/pic1.png");
 	background-repeat: no-repeat;
@@ -1230,9 +1253,8 @@ a:hover{
 	bottom: 0%;
 	width: 300px;
 	height: 290px;
-	left: 2500px;
+	left: 1900px;
 }
-
 #subject4{
 	background-image: url("../img/ParallaxTesting/morgan.png");
 	background-repeat: no-repeat;
@@ -1242,7 +1264,84 @@ a:hover{
 	bottom: 5%;
 	width: 100px;
 	height: 300px;
-	left: 3100px;
+	left: 2400px;
+}
+#subject5{
+	background-image: url("../img/ParallaxTesting/andrea.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	position: absolute;
+	display: inline-block;
+	bottom: 0%;
+	width: 600px;
+	height: 300px;
+	left: 2700px;
+}
+#subject6{
+	background-image: url("../img/ParallaxTesting/indaia.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	position: absolute;
+	display: inline-block;
+	bottom: 0%;
+	width: 150px;
+	height: 300px;
+	left: 3400px;
+}
+#subject7{
+	background-image: url("../img/ParallaxTesting/callaghan.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	position: absolute;
+	display: inline-block;
+	bottom: 7%;
+	width: 120px;
+	height: 250px;
+	left: 3700px;
+}
+#subject8{
+	background-image: url("../img/ParallaxTesting/dillon.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	position: absolute;
+	display: inline-block;
+	bottom: 0%;
+	width: 200px;
+	height: 250px;
+	left: 4100px;
+}
+#subject9{
+	background-image: url("../img/ParallaxTesting/mariana.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	position: absolute;
+	display: inline-block;
+	bottom: 0%;
+	width: 300px;
+	height: 300px;
+	left: 4500px;
+}
+#subject10{
+	background-image: url("../img/ParallaxTesting/ray.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	position: absolute;
+	display: inline-block;
+	bottom: 0%;
+	width: 300px;
+	height: 200px;
+	left: 4900px;
+}
+#subject11{
+	background-image: url("../img/ParallaxTesting/isabella.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	position: absolute;
+	display: inline-block;
+	bottom: 0%;
+	width: 250px;
+	height: 300px;
+	left: 5350px;
 }
 
 #tree1{

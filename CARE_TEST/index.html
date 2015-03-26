@@ -160,7 +160,159 @@
             <a href="#" class="cd-modal-close">Close</a>
           </section>
 
+          <a id="subject5" href="#" onclick="pipe5();"></a>
+          <div id="trigger9" class="spacer s0"></div>
+          <div id="trigger10" class="spacer s0"></div>
 
+          <section class="cd-section">
+            <a href="#" id="story5" data-type="modal-trigger" class="box2 black btn">
+              <h4>Story 5</h4>
+            </a>
+
+            <span class="cd-modal-bg"></span>
+
+
+            <div class="cd-modal">
+              <div class="cd-modal-content">
+                <p>Fifth article would go here. </p>
+
+              </div> <!-- cd-modal-content -->
+            </div> <!-- cd-modal -->
+
+            <a href="#" class="cd-modal-close">Close</a>
+          </section>
+
+          <a id="subject6" href="#" onclick="pipe6();"></a>
+          <div id="trigger11" class="spacer s0"></div>
+          <div id="trigger12" class="spacer s0"></div>
+
+          <section class="cd-section">
+            <a href="#" id="story6" data-type="modal-trigger" class="box2 black btn">
+              <h4>Story 6</h4>
+            </a>
+
+            <span class="cd-modal-bg"></span>
+
+
+            <div class="cd-modal">
+              <div class="cd-modal-content">
+                <p>Sixth article would go here. </p>
+
+              </div> <!-- cd-modal-content -->
+            </div> <!-- cd-modal -->
+
+            <a href="#" class="cd-modal-close">Close</a>
+          </section>
+
+          <a id="subject7" href="#" onclick="pipe7();"></a>
+          <div id="trigger13" class="spacer s0"></div>
+          <div id="trigger14" class="spacer s0"></div>
+
+          <section class="cd-section">
+            <a href="#" id="story7" data-type="modal-trigger" class="box2 black btn">
+              <h4>Story 7</h4>
+            </a>
+
+            <span class="cd-modal-bg"></span>
+
+
+            <div class="cd-modal">
+              <div class="cd-modal-content">
+                <p>Seventh article would go here. </p>
+
+              </div> <!-- cd-modal-content -->
+            </div> <!-- cd-modal -->
+
+            <a href="#" class="cd-modal-close">Close</a>
+          </section>
+
+          <a id="subject8" href="#" onclick="pipe8();"></a>
+          <div id="trigger15" class="spacer s0"></div>
+          <div id="trigger16" class="spacer s0"></div>
+
+          <section class="cd-section">
+            <a href="#" id="story8" data-type="modal-trigger" class="box2 black btn">
+              <h4>Story 8</h4>
+            </a>
+
+            <span class="cd-modal-bg"></span>
+
+
+            <div class="cd-modal">
+              <div class="cd-modal-content">
+                <p>Eighth article would go here. </p>
+
+              </div> <!-- cd-modal-content -->
+            </div> <!-- cd-modal -->
+
+            <a href="#" class="cd-modal-close">Close</a>
+          </section>
+
+          <a id="subject9" href="#" onclick="pipe9();"></a>
+          <div id="trigger17" class="spacer s0"></div>
+          <div id="trigger18" class="spacer s0"></div>
+
+          <section class="cd-section">
+            <a href="#" id="story9" data-type="modal-trigger" class="box2 black btn">
+              <h4>Story 9</h4>
+            </a>
+
+            <span class="cd-modal-bg"></span>
+
+
+            <div class="cd-modal">
+              <div class="cd-modal-content">
+                <p>Ninth article would go here. </p>
+
+              </div> <!-- cd-modal-content -->
+            </div> <!-- cd-modal -->
+
+            <a href="#" class="cd-modal-close">Close</a>
+          </section>
+
+          <a id="subject10" href="#" onclick="pipe10();"></a>
+          <div id="trigger19" class="spacer s0"></div>
+          <div id="trigger20" class="spacer s0"></div>
+
+          <section class="cd-section">
+            <a href="#" id="story10" data-type="modal-trigger" class="box2 black btn">
+              <h4>Story 10</h4>
+            </a>
+
+            <span class="cd-modal-bg"></span>
+
+
+            <div class="cd-modal">
+              <div class="cd-modal-content">
+                <p>Tenth article would go here. </p>
+
+              </div> <!-- cd-modal-content -->
+            </div> <!-- cd-modal -->
+
+            <a href="#" class="cd-modal-close">Close</a>
+          </section>
+
+          <a id="subject11" href="#" onclick="pipe11();"></a>
+          <div id="trigger21" class="spacer s0"></div>
+          <div id="trigger22" class="spacer s0"></div>
+
+          <section class="cd-section">
+            <a href="#" id="story11" data-type="modal-trigger" class="box2 black btn">
+              <h4>Story 11</h4>
+            </a>
+
+            <span class="cd-modal-bg"></span>
+
+
+            <div class="cd-modal">
+              <div class="cd-modal-content">
+                <p>Eleventh article would go here. </p>
+
+              </div> <!-- cd-modal-content -->
+            </div> <!-- cd-modal -->
+
+            <a href="#" class="cd-modal-close">Close</a>
+          </section>
 
         </div> <!-- END LAYER 3 -->
 
@@ -253,6 +405,160 @@
                     //.addIndicators() // add indicators (requires plugin)
                     .addTo(controller);
 
+              // BEGIN FIFTH STORY TARGET
+
+                     // build tween
+            var tween = TweenMax.to("#story5", 0.5, {backgroundColor: "#e4782e" , width: "+=50"});
+
+                     // build scene
+            var scene = new ScrollMagic.Scene({triggerElement: "#trigger9", duration: 250})
+                             .setTween(tween)
+
+                           //  .addIndicators() // add indicators (requires plugin)
+                             .addTo(controller);
+
+
+                     // build tween
+            var tween = TweenMax.to("#story5", 0.5, {backgroundColor: "#231d1f" , width: "-=50"});
+
+                     // build scene
+            var scene = new ScrollMagic.Scene({triggerElement: "#trigger10", duration: 250, offset: 400})
+                             .setTween(tween)
+                             //.addIndicators() // add indicators (requires plugin)
+                             .addTo(controller);
+
+             // BEGIN SIXTH STORY TARGET
+
+                                    // build tween
+             var tween = TweenMax.to("#story6", 0.5, {backgroundColor: "#e4782e" , width: "+=50"});
+
+                                    // build scene
+             var scene = new ScrollMagic.Scene({triggerElement: "#trigge11", duration: 250})
+                                            .setTween(tween)
+
+                                          //  .addIndicators() // add indicators (requires plugin)
+                                            .addTo(controller);
+
+
+                                    // build tween
+             var tween = TweenMax.to("#story6", 0.5, {backgroundColor: "#231d1f" , width: "-=50"});
+
+                                    // build scene
+             var scene = new ScrollMagic.Scene({triggerElement: "#trigger12", duration: 250, offset: 400})
+                                            .setTween(tween)
+                                            //.addIndicators() // add indicators (requires plugin)
+                                            .addTo(controller);
+
+            // BEGIN SEVENTH STORY TARGET
+
+                                                   // build tween
+            var tween = TweenMax.to("#story7", 0.5, {backgroundColor: "#e4782e" , width: "+=50"});
+
+                                                   // build scene
+            var scene = new ScrollMagic.Scene({triggerElement: "#trigger13", duration: 250})
+                                                           .setTween(tween)
+
+                                                         //  .addIndicators() // add indicators (requires plugin)
+                                                           .addTo(controller);
+
+
+                                                   // build tween
+            var tween = TweenMax.to("#story7", 0.5, {backgroundColor: "#231d1f" , width: "-=50"});
+
+                                                   // build scene
+            var scene = new ScrollMagic.Scene({triggerElement: "#trigger14", duration: 250, offset: 400})
+                                                           .setTween(tween)
+                                                           //.addIndicators() // add indicators (requires plugin)
+                                                           .addTo(controller);
+
+
+           // BEGIN EIGTH STORY TARGET
+
+                                                                  // build tween
+            var tween = TweenMax.to("#story8", 0.5, {backgroundColor: "#e4782e" , width: "+=50"});
+
+                                                                  // build scene
+            var scene = new ScrollMagic.Scene({triggerElement: "#trigger15", duration: 250})
+                                                                          .setTween(tween)
+
+                                                                        //  .addIndicators() // add indicators (requires plugin)
+                                                                          .addTo(controller);
+
+
+                                                                  // build tween
+            var tween = TweenMax.to("#story8", 0.5, {backgroundColor: "#231d1f" , width: "-=50"});
+
+                                                                  // build scene
+            var scene = new ScrollMagic.Scene({triggerElement: "#trigger16", duration: 250, offset: 400})
+                                                                          .setTween(tween)
+                                                                          //.addIndicators() // add indicators (requires plugin)
+                                                                          .addTo(controller);
+
+          // BEGIN NINTH STORY TARGET
+
+                                                                                                                                 // build tween
+           var tween = TweenMax.to("#story9", 0.5, {backgroundColor: "#e4782e" , width: "+=50"});
+
+                                                                                                                                 // build scene
+           var scene = new ScrollMagic.Scene({triggerElement: "#trigger17", duration: 250})
+                                                                                                                                         .setTween(tween)
+
+                                                                                                                                       //  .addIndicators() // add indicators (requires plugin)
+                                                                                                                                         .addTo(controller);
+
+
+                                                                                                                                 // build tween
+           var tween = TweenMax.to("#story9", 0.5, {backgroundColor: "#231d1f" , width: "-=50"});
+
+                                                                                                                                 // build scene
+           var scene = new ScrollMagic.Scene({triggerElement: "#trigger18", duration: 250, offset: 400})
+                                                                                                                                         .setTween(tween)
+                                                                                                                                         //.addIndicators() // add indicators (requires plugin)
+                                                                                                                                         .addTo(controller);
+                                                                                                                                         // BEGIN TENTH STORY TARGET
+
+                                                                                                                                                                                                // build tween
+                                                                                                                                          var tween = TweenMax.to("#story10", 0.5, {backgroundColor: "#e4782e" , width: "+=50"});
+
+                                                                                                                                                                                                // build scene
+                                                                                                                                          var scene = new ScrollMagic.Scene({triggerElement: "#trigger19", duration: 250})
+                                                                                                                                                                                                        .setTween(tween)
+                                                                                                                                                                                                                                                                                                                                    //  .addIndicators() // add indicators (requires plugin)
+                                                                                                                                                                                                        .addTo(controller);
+
+
+                                                                                                                                                                                                // build tween
+                                                                                                                                          var tween = TweenMax.to("#story10", 0.5, {backgroundColor: "#231d1f" , width: "-=50"});
+
+                                                                                                                                                                                                // build scene
+                                                                                                                                          var scene = new ScrollMagic.Scene({triggerElement: "#trigger20", duration: 250, offset: 400})
+                                                                                                                                                                                                        .setTween(tween)
+                                                                                                                                                                                                        //.addIndicators() // add indicators (requires plugin)
+                                                                                                                                                                                                        .addTo(controller);
+
+                                                                                                                                                                                                        // BEGIN ELEVENTH STORY TARGET
+
+                                                                                                                                                                                                                                                               // build tween
+                                                                                                                                                                                                         var tween = TweenMax.to("#story11", 0.5, {backgroundColor: "#e4782e" , width: "+=50"});
+
+                                                                                                                                                                                                                                                               // build scene
+                                                                                                                                                                                                         var scene = new ScrollMagic.Scene({triggerElement: "#trigger21", duration: 250})
+                                                                                                                                                                                                                                                                       .setTween(tween)
+
+                                                                                                                                                                                                                                                                     //  .addIndicators() // add indicators (requires plugin)
+                                                                                                                                                                                                                                                                       .addTo(controller);
+
+                                                                                                                                                                                                                                                                                               // build tween
+                                                                                                                                                                                                         var tween = TweenMax.to("#story11", 0.5, {backgroundColor: "#231d1f" , width: "-=50"});
+
+                                                                                                                                                                                                                                                               // build scene
+                                                                                                                                                                                                         var scene = new ScrollMagic.Scene({triggerElement: "#trigger22", duration: 250, offset: 400})
+                                                                                                                                                                                                                                                                       .setTween(tween)
+                                                                                                                                                                                                                                                                       //.addIndicators() // add indicators (requires plugin)
+                                                                                                                                                                                                                                                                       .addTo(controller);
+
+
+
             var scene = new ScrollMagic.Scene({triggerElement: "#titleFade"})
                     // trigger a velocity opaticy animation
                     .setVelocity("#titlechart", {opacity: 0}, {duration: 500})
@@ -272,6 +578,27 @@
             }
             function pipe4(){
               $('#story4').click();
+            }
+            function pipe5(){
+              $('#story5').click();
+            }
+            function pipe6(){
+              $('#story6').click();
+            }
+            function pipe7(){
+              $('#story7').click();
+            }
+            function pipe8(){
+              $('#story8').click();
+            }
+            function pipe9(){
+              $('#story9').click();
+            }
+            function pipe10(){
+              $('#story10').click();
+            }
+            function pipe11(){
+              $('#story11').click();
             }
           </script>
           <script>
