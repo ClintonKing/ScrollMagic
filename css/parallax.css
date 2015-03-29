@@ -1178,19 +1178,19 @@ a:hover{
 /*CSS FOR INDIVIDUAL PIECES */
 
 #story1{
-	left: -190px;
+	left: -50px;
 	top: 30%;
 }
 #story2{
-	left: -480px;
+	left: -280px;
 	top: 30%;
 }
 #story3{
-	left: -300px;
+	left: -400px;
 	top: 30%;
 }
 #story4{
-	left: -450px;
+	left: -500px;
 	top: 30%;
 }
 #story5{
@@ -1294,10 +1294,10 @@ a:hover{
 	background-size: 100%;
 	position: absolute;
 	display: inline-block;
-	bottom: 7%;
-	width: 120px;
-	height: 250px;
-	left: 3700px;
+	bottom: 12%;
+	width: 80px;
+	height: 150px;
+	left: 3800px;
 }
 #subject8{
 	background-image: url("../img/ParallaxTesting/dillon.png");
