@@ -9,12 +9,12 @@
 /*GENERAL CSS */
 #content-wrapper, #example-wrapper {
 	height: 100%;
-	width: 5760px;
+	width: 12224px;
 }
 .scrollContainer {
 	overflow-y: scroll;
 	overflow-x: hidden;
-	width: 5760px;
+	width: 12224px;
 }
 .scrollContainer {
 	height: 100%;
@@ -54,10 +54,10 @@
 
 section#titlechart {
 	text-align: center;
-	position: relative;
+	position: absolute;
 	height: 100%;
 	min-width: 15%;
-	left: -2400px;
+	left: 600px;
 }
 .horizontal section {
 	display: inline-block;
@@ -65,7 +65,7 @@ section#titlechart {
 	height: 100%;
 }
 section#titlechart #description {
-	top: 30%;
+	top: 32%;
 	left: 50%;
 	position: absolute;
 	width: 600px;
@@ -175,7 +175,7 @@ h1.badge.beta:after{
 	background-color: yellow;
 }
 h1.badge.delta:after{
-	content: "DELTA";
+	content: "2.0";
 	background-color: #61AC27;
 }
 
@@ -862,22 +862,22 @@ a.viewsource:before {
 
 #parallaxContainer {
 	height: 100%;
-	width: 5760px;
+	width: 12224px;
 	overflow: hidden;
 }
 #parallaxContainer .layer1 {
 	height: 100%;
 	text-align: center;
-	width: 5760px;
-	background: url("../img/ParallaxTesting/panorama_demo_bigPano.png");
+	width: 100%;
+	background: url("../img/parallaxDraft-01.png");
 	background-position: left bottom;
-	background-size: 100% 100%;
-  background-repeat: repeat-x;
+	background-size: 90% 100%;
+	background-repeat: none;
 }
 #parallaxContainer .layer2 {
 	position: absolute;
 	height: 100%;
-	width: 5760px;
+	width: 12224px;
 	bottom: 0px;
 	background-position: left bottom;
 	background-size: 100% 100%;
@@ -886,7 +886,7 @@ a.viewsource:before {
 #parallaxContainer .layer3 {
 	position: absolute;
 	height: 100%;
-	width: 5760px;
+	width: 12224px;
 	bottom: 0px;
 	background-position: left bottom;
 	background-size: 100% 100%;
@@ -1223,125 +1223,93 @@ a:hover{
 }
 
 #subject1{
-	background-image: url("../img/ParallaxTesting/pic2.png");
-	background-repeat: no-repeat;
-	background-size: 50%;
-	position: absolute;
-	display: inline-block;
-	bottom: 0px;
-	width: 250px;
-	height: 315px;
-	left: 1100px;
-}
-#subject2{
-	background-image: url("../img/ParallaxTesting/pic3.png");
-	background-repeat: no-repeat;
-	background-size: 100%;
 	position: absolute;
 	display: inline-block;
 	bottom: 0%;
-	width: 300px;
-	height: 290px;
+	height: 100vh;
+	width: auto;
 	left: 1500px;
 }
-#subject3{
-	background-image: url("../img/ParallaxTesting/pic1.png");
-	background-repeat: no-repeat;
-	background-size: 100%;
+#subject2{
 	position: absolute;
 	display: inline-block;
 	bottom: 0%;
-	width: 300px;
-	height: 290px;
-	left: 1900px;
+	height: 100vh;
+	width: auto;
+	left: 3200px;
+}
+#subject3{
+	position: absolute;
+	display: inline-block;
+	bottom: 0%;
+	height: 100vh;
+	width: auto;
+	left: 5050px;
 }
 #subject4{
-	background-image: url("../img/ParallaxTesting/morgan.png");
-	background-repeat: no-repeat;
-	background-size: 100%;
 	position: absolute;
 	display: inline-block;
-	bottom: 5%;
-	width: 100px;
-	height: 300px;
-	left: 2400px;
+	bottom: 0%;
+	height: 100vh;
+	width: auto;
+	left: 6400px;
 }
 #subject5{
-	background-image: url("../img/ParallaxTesting/andrea.png");
-	background-repeat: no-repeat;
-	background-size: 100%;
 	position: absolute;
 	display: inline-block;
 	bottom: 0%;
-	width: 600px;
-	height: 300px;
-	left: 2700px;
+	height: 100vh;
+	width: auto;
+	left: 7800px;
 }
 #subject6{
-	background-image: url("../img/ParallaxTesting/indaia.png");
-	background-repeat: no-repeat;
-	background-size: 100%;
 	position: absolute;
 	display: inline-block;
 	bottom: 0%;
-	width: 150px;
-	height: 300px;
-	left: 3400px;
+	height: 100vh;
+	width: auto;
+	left: 9000px;
 }
 #subject7{
-	background-image: url("../img/ParallaxTesting/callaghan.png");
-	background-repeat: no-repeat;
-	background-size: 100%;
 	position: absolute;
 	display: inline-block;
-	bottom: 12%;
-	width: 80px;
-	height: 150px;
-	left: 3800px;
+	bottom: 0%;
+	height: 100vh;
+	width: auto;
+	left: 10500px;
 }
 #subject8{
-	background-image: url("../img/ParallaxTesting/dillon.png");
-	background-repeat: no-repeat;
-	background-size: 100%;
 	position: absolute;
 	display: inline-block;
 	bottom: 0%;
-	width: 200px;
-	height: 250px;
-	left: 4100px;
+	height: 100vh;
+	width: auto;
+	left: 1000px;
 }
 #subject9{
-	background-image: url("../img/ParallaxTesting/mariana.png");
-	background-repeat: no-repeat;
-	background-size: 100%;
 	position: absolute;
 	display: inline-block;
 	bottom: 0%;
-	width: 300px;
-	height: 300px;
-	left: 4500px;
+	height: 100vh;
+	width: auto;
+	left: 1000px;
 }
 #subject10{
-	background-image: url("../img/ParallaxTesting/ray.png");
-	background-repeat: no-repeat;
-	background-size: 100%;
 	position: absolute;
 	display: inline-block;
 	bottom: 0%;
-	width: 300px;
-	height: 200px;
-	left: 4900px;
+	height: 100vh;
+	width: auto;
+	left: 1000px;
 }
 #subject11{
-	background-image: url("../img/ParallaxTesting/isabella.png");
-	background-repeat: no-repeat;
-	background-size: 100%;
 	position: absolute;
 	display: inline-block;
 	bottom: 0%;
-	width: 250px;
-	height: 300px;
-	left: 5350px;
+	height: 100vh;
+	width: auto;
+	left: 1000px;
+
 }
 
 #tree1{
@@ -1362,5 +1330,5 @@ a:hover{
 #intro{
 	position: absolute;
 	top: 30%;
-	left: 140px;
+	left: 300px;
 }
