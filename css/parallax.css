@@ -1236,7 +1236,7 @@ a:hover{
 	bottom: 0%;
 	height: 100vh;
 	width: auto;
-	left: 3200px;
+	left: 2900px;
 }
 #subject3{
 	position: absolute;
@@ -1244,7 +1244,7 @@ a:hover{
 	bottom: 0%;
 	height: 100vh;
 	width: auto;
-	left: 5050px;
+	left: 4500px;
 }
 #subject4{
 	position: absolute;
@@ -1252,7 +1252,7 @@ a:hover{
 	bottom: 0%;
 	height: 100vh;
 	width: auto;
-	left: 6400px;
+	left: 5750px;
 }
 #subject5{
 	position: absolute;
@@ -1260,7 +1260,7 @@ a:hover{
 	bottom: 0%;
 	height: 100vh;
 	width: auto;
-	left: 7800px;
+	left: 7000px;
 }
 #subject6{
 	position: absolute;
@@ -1268,7 +1268,7 @@ a:hover{
 	bottom: 0%;
 	height: 100vh;
 	width: auto;
-	left: 9000px;
+	left: 8200px;
 }
 #subject7{
 	position: absolute;
@@ -1276,7 +1276,7 @@ a:hover{
 	bottom: 0%;
 	height: 100vh;
 	width: auto;
-	left: 10500px;
+	left: 9500px;
 }
 #subject8{
 	position: absolute;
@@ -1330,5 +1330,5 @@ a:hover{
 #intro{
 	position: absolute;
 	top: 30%;
-	left: 300px;
+	left: 350px;
 }
